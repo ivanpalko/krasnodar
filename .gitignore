@@ -1,0 +1,14 @@
+# OS / редакторы
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Логи и кэш
+*.log
+npm-debug.log*
+.cache/
+
+# Node (если позже добавишь сборку)
+node_modules/
+dist/

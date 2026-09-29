@@ -1,0 +1,100 @@
+body {
+  margin: 0;
+  background: #111;
+  font-family: Arial, sans-serif;
+  color: #eee;
+}
+
+#topbar {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 10px 16px;
+  background: #1a1a1a;
+  border-bottom: 2px solid #333;
+  flex-wrap: wrap;
+}
+
+#topbar h1 {
+  margin: 0;
+  font-size: 20px;
+  color: #ff6b6b;
+}
+
+#scoreboard {
+  display: flex;
+  gap: 12px;
+  font-size: 16px;
+}
+
+.score-item {
+  padding: 4px 12px;
+  background: #262626;
+  border-radius: 6px;
+}
+
+.krasnodar { color: #ff6b6b; }
+.veggies   { color: #7cff7c; }
+.lives     { color: #ffcc00; }
+
+.lives-low {
+  color: #ff3b30;
+  animation: blink 0.6s infinite alternate;
+}
+
+@keyframes blink {
+  from { opacity: 1; }
+  to   { opacity: 0.35; }
+}
+
+#sound-config {
+  margin-left: auto;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  font-size: 11px;
+  color: #aaa;
+}
+
+#sound-config label {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+#sound-config input {
+  width: 130px;
+  padding: 4px;
+  border-radius: 4px;
+  border: 1px solid #444;
+  background: #0d0d0d;
+  color: #eee;
+  font-size: 11px;
+}
+
+#restart-btn {
+  display: none;
+  padding: 8px 20px;
+  background: #e52521;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#restart-btn:hover {
+  background: #ff3b30;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  margin-top: 12px;
+}
+
+canvas {
+  border: 2px solid #333;
+  border-radius: 4px;
+}

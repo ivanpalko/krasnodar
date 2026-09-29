@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Сбор Краснодара</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div id="topbar">
+  <h1>Сбор Краснодара</h1>
+  <div id="scoreboard">
+    <div class="score-item krasnodar">🍅 Краснодар: <span id="score-k">0</span></div>
+    <div class="score-item veggies">🥬 Овощи: <span id="score-v">0</span></div>
+    <div class="score-item lives">❤️ Жизни: <span id="score-l">8</span></div>
+  </div>
+  <div id="sound-config">
+    <label>Мелодия<input id="snd-melody" placeholder="URL или пусто"></label>
+    <label>Столкновение<input id="snd-collision" placeholder="URL или пусто"></label>
+    <label>Краснодар<input id="snd-krasnodar" placeholder="URL или пусто"></label>
+    <label>Овощи<input id="snd-veggies" placeholder="URL или пусто"></label>
+  </div>
+  <button id="restart-btn">Начать заново</button>
+</div>
+
+<div class="container">
+  <canvas id="game" width="900" height="460"></canvas>
+</div>
+
+<script src="js/audio.js"></script>
+<script src="js/sprites.js"></script>
+<script src="js/game.js"></script>
+</body>
+</html>
